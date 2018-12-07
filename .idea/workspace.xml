@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f6fa2b05-1110-4438-a5ee-0a493bb979ab" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ArrayUtilities.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/TestArrayUtilities.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/stringUtilities/StringUtilities.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/stringUtilitiesTests/TestStringUtilities.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ArrayUtilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/arrayUtilities/IntArrayUtilities.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestArrayUtilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/arrayUtilitiesTests/TestIntArrayUtilities.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -26,14 +27,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="2" />
+          <entry key="JAVA" value="4" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="646" />
-          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="JAVA" value="787" />
+          <entry key="PLAIN_TEXT" value="5" />
         </counts>
       </usages-collector>
     </session>
@@ -46,19 +47,41 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ArrayUtilities.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/arrayUtilities/IntArrayUtilities.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="496">
-              <caret line="128" column="5" selection-start-line="128" selection-start-column="5" selection-end-line="128" selection-end-column="5" />
+            <state relative-caret-position="2400">
+              <caret line="164" column="20" selection-start-line="164" selection-start-column="20" selection-end-line="164" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/arrayUtilitiesTests/TestIntArrayUtilities.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#7694#7703#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/stringUtilities/StringUtilities.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="376">
+              <caret line="60" column="9" selection-start-line="60" selection-start-column="9" selection-end-line="60" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/TestArrayUtilities.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/stringUtilitiesTests/TestStringUtilities.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2595">
-              <caret line="173" lean-forward="true" selection-start-line="173" selection-end-line="173" />
+            <state relative-caret-position="4155">
+              <caret line="277" column="15" lean-forward="true" selection-start-line="277" selection-start-column="15" selection-end-line="277" selection-end-column="15" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -78,6 +101,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>Arraz</find>
+      <find>StringUtils</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -90,6 +114,10 @@
         <option value="$PROJECT_DIR$/src/test/java/testArrayUtilities.java" />
         <option value="$PROJECT_DIR$/src/main/java/ArrayUtilities.java" />
         <option value="$PROJECT_DIR$/src/test/java/TestArrayUtilities.java" />
+        <option value="$PROJECT_DIR$/src/main/java/arrayUtilities/ArrayUtilities.java" />
+        <option value="$PROJECT_DIR$/src/main/java/arrayUtilities/IntArrayUtilities.java" />
+        <option value="$PROJECT_DIR$/src/main/java/stringUtilities/StringUtilities.java" />
+        <option value="$PROJECT_DIR$/src/test/java/stringUtilitiesTests/TestStringUtilities.java" />
       </list>
     </option>
   </component>
@@ -140,6 +168,14 @@
               <item name="javaUtils" type="b2602c69:ProjectViewProjectNode" />
               <item name="javaUtilities" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="arrayUtilities" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javaUtils" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javaUtilities" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -159,7 +195,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544203970937" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544204304722" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -178,7 +214,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.All in javaUtilities">
+  <component name="RunManager" selected="JUnit.TestStringUtilities">
     <configuration name="All in javaUtilities" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javaUtilities" />
       <option name="PACKAGE_NAME" value="" />
@@ -187,58 +223,62 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestArrayUtilities" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestIntArrayUtilities" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javaUtilities" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestArrayUtilities" />
+      <option name="PACKAGE_NAME" value="arrayUtilitiesTests" />
+      <option name="MAIN_CLASS_NAME" value="arrayUtilitiesTests.TestIntArrayUtilities" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestArrayUtilities.test1ReverseArray" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestIntArrayUtilities.test1ReverseArray" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javaUtilities" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestArrayUtilities" />
+      <option name="PACKAGE_NAME" value="arrayUtilitiesTests" />
+      <option name="MAIN_CLASS_NAME" value="arrayUtilitiesTests.TestIntArrayUtilities" />
       <option name="METHOD_NAME" value="test1ReverseArray" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestArrayUtilities.test2ReverseArray" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestIntArrayUtilities.test2ReverseArray" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javaUtilities" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestArrayUtilities" />
+      <option name="PACKAGE_NAME" value="arrayUtilitiesTests" />
+      <option name="MAIN_CLASS_NAME" value="arrayUtilitiesTests.TestIntArrayUtilities" />
       <option name="METHOD_NAME" value="test2ReverseArray" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestArrayUtilities.testBubbleSort2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestStringUtilities" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javaUtilities" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestArrayUtilities" />
-      <option name="METHOD_NAME" value="testBubbleSort2" />
-      <option name="TEST_OBJECT" value="method" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="stringUtilitiesTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="stringUtilitiesTests" />
+      <option name="MAIN_CLASS_NAME" value="stringUtilitiesTests.TestStringUtilities" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.TestArrayUtilities.testBubbleSort2" />
-      <item itemvalue="JUnit.TestArrayUtilities" />
-      <item itemvalue="JUnit.TestArrayUtilities.test1ReverseArray" />
-      <item itemvalue="JUnit.TestArrayUtilities.test2ReverseArray" />
+      <item itemvalue="JUnit.TestIntArrayUtilities" />
+      <item itemvalue="JUnit.TestIntArrayUtilities.test1ReverseArray" />
+      <item itemvalue="JUnit.TestIntArrayUtilities.test2ReverseArray" />
       <item itemvalue="JUnit.All in javaUtilities" />
+      <item itemvalue="JUnit.TestStringUtilities" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestStringUtilities" />
         <item itemvalue="JUnit.All in javaUtilities" />
-        <item itemvalue="JUnit.TestArrayUtilities" />
-        <item itemvalue="JUnit.TestArrayUtilities.test1ReverseArray" />
-        <item itemvalue="JUnit.TestArrayUtilities.test2ReverseArray" />
-        <item itemvalue="JUnit.TestArrayUtilities.testBubbleSort2" />
+        <item itemvalue="JUnit.TestIntArrayUtilities" />
+        <item itemvalue="JUnit.TestIntArrayUtilities.test1ReverseArray" />
+        <item itemvalue="JUnit.TestIntArrayUtilities.test2ReverseArray" />
       </list>
     </recent_temporary>
   </component>
@@ -252,17 +292,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1544202630877</updated>
-      <workItem from="1544202634361" duration="1334000" />
+      <workItem from="1544202634361" duration="2172000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestArrayUtilities_test2ReverseArray - 2018.12.07 at 12h 23m 54s.xml">
-      <configuration name="TestArrayUtilities.test2ReverseArray" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestArrayUtilities_test1ReverseArray - 2018.12.07 at 12h 27m 15s.xml">
-      <configuration name="TestArrayUtilities.test1ReverseArray" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TestArrayUtilities_test1ReverseArray - 2018.12.07 at 12h 27m 19s.xml">
       <configuration name="TestArrayUtilities.test1ReverseArray" configurationId="JUnit" />
     </history-entry>
@@ -287,9 +321,15 @@
     <history-entry file="TestArrayUtilities_test1ReverseArray - 2018.12.07 at 12h 29m 21s.xml">
       <configuration name="TestArrayUtilities.test1ReverseArray" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TestArrayUtilities - 2018.12.07 at 12h 32m 54s.xml">
+      <configuration name="TestArrayUtilities" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_javaUtilities - 2018.12.07 at 12h 36m 42s.xml">
+      <configuration name="All in javaUtilities" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1334000" />
+    <option name="totallyTimeSpent" value="2172000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="126" y="23" width="1668" height="947" extended-state="0" />
@@ -300,16 +340,16 @@
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2496925" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2496925" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Messages" weight="0.32982457" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.32982457" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32982457" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32982457" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -335,17 +375,35 @@
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ArrayUtilities.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/arrayUtilities/IntArrayUtilities.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="128" column="5" selection-start-line="128" selection-start-column="5" selection-end-line="128" selection-end-column="5" />
+        <state relative-caret-position="2400">
+          <caret line="164" column="20" selection-start-line="164" selection-start-column="20" selection-end-line="164" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/TestArrayUtilities.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/arrayUtilitiesTests/TestIntArrayUtilities.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2595">
-          <caret line="173" lean-forward="true" selection-start-line="173" selection-end-line="173" />
+        <state relative-caret-position="135">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#7694#7703#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/stringUtilities/StringUtilities.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="60" column="9" selection-start-line="60" selection-start-column="9" selection-end-line="60" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/stringUtilitiesTests/TestStringUtilities.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4155">
+          <caret line="277" column="15" lean-forward="true" selection-start-line="277" selection-start-column="15" selection-end-line="277" selection-end-column="15" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

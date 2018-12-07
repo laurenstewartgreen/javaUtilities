@@ -1,6 +1,8 @@
+package arrayUtilities;
+
 import java.util.ArrayList;
 
-public class ArrayUtilities {
+public class IntArrayUtilities {
 
     public static void bubbleSort(int[] arr) {
 

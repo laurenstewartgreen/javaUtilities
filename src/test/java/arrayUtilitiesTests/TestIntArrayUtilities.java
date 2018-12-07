@@ -1,16 +1,19 @@
+package arrayUtilitiesTests;
+
+import arrayUtilities.IntArrayUtilities;
 import org.junit.Assert;
 import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class TestArrayUtilities {
+public class TestIntArrayUtilities {
 
     @Test
     public void testBubbleSort1() {
         int[] actual = {4, 5, 1, 9, 0, 11, 6};
         int[] expected = {0, 1, 4, 5, 6, 9, 11};
-        ArrayUtilities.bubbleSort(actual);
+        IntArrayUtilities.bubbleSort(actual);
 
         Assert.assertArrayEquals(actual, expected);
     }
@@ -19,7 +22,7 @@ public class TestArrayUtilities {
     public void testBubbleSort2() {
         int[] actual = {-5, 29, 375, -11, -145};
         int[] expected = {-145, -11, -5, 29, 375};
-        ArrayUtilities.bubbleSort(actual);
+        IntArrayUtilities.bubbleSort(actual);
 
         Assert.assertArrayEquals(actual, expected);
     }
@@ -28,7 +31,7 @@ public class TestArrayUtilities {
     public void test1SumValuesOfArray() {
         int[] input = {3, 4, 9, 2, 1};
         int expected = 19;
-        int actual = ArrayUtilities.sumValuesOfArray(input);
+        int actual = IntArrayUtilities.sumValuesOfArray(input);
 
         Assert.assertEquals(expected, actual);
     }
@@ -37,7 +40,7 @@ public class TestArrayUtilities {
     public void test2SumValuesOfArray() {
         int[] input = {8};
         int expected = 8;
-        int actual = ArrayUtilities.sumValuesOfArray(input);
+        int actual = IntArrayUtilities.sumValuesOfArray(input);
 
         Assert.assertEquals(expected, actual);
     }
@@ -46,7 +49,7 @@ public class TestArrayUtilities {
     public void test3SumValuesOfArray() {
         int[] input = {6, 5, -3, -2, -6};
         int expected = 0;
-        int actual = ArrayUtilities.sumValuesOfArray(input);
+        int actual = IntArrayUtilities.sumValuesOfArray(input);
 
         Assert.assertEquals(expected, actual);
     }
@@ -55,7 +58,7 @@ public class TestArrayUtilities {
     public void test1SumDoublesOfArray() {
         double[] input = {3.2, 4.55, 9.0, 2.34, 1.7};
         double expected = 20.79;
-        double actual = ArrayUtilities.sumDoublesOfArray(input);
+        double actual = IntArrayUtilities.sumDoublesOfArray(input);
 
         Assert.assertEquals(expected, actual, 0.01);
     }
@@ -64,7 +67,7 @@ public class TestArrayUtilities {
     public void test2SumDoublesOfArray() {
         double[] input = {5.24789};
         double expected = 5.24789;
-        double actual = ArrayUtilities.sumDoublesOfArray(input);
+        double actual = IntArrayUtilities.sumDoublesOfArray(input);
 
         Assert.assertEquals(expected, actual, 0.01);
     }
@@ -73,7 +76,7 @@ public class TestArrayUtilities {
     public void test1AverageOfArray() {
         int[] input = {3, 4, 9, 3, 1};
         int expected = 4;
-        int actual = ArrayUtilities.averageOfArray(input);
+        int actual = IntArrayUtilities.averageOfArray(input);
 
         Assert.assertEquals(expected, actual);
     }
@@ -82,7 +85,7 @@ public class TestArrayUtilities {
     public void test2AverageOfArray() {
         int[] input = {8};
         int expected = 8;
-        int actual = ArrayUtilities.averageOfArray(input);
+        int actual = IntArrayUtilities.averageOfArray(input);
 
         Assert.assertEquals(expected, actual);
     }
@@ -91,7 +94,7 @@ public class TestArrayUtilities {
     public void test3AverageOfArray() {
         int[] input = {6, 5, -3, -2, -6};
         int expected = 0;
-        int actual = ArrayUtilities.averageOfArray(input);
+        int actual = IntArrayUtilities.averageOfArray(input);
 
         Assert.assertEquals(expected, actual);
     }
@@ -100,7 +103,7 @@ public class TestArrayUtilities {
     public void test4AverageOfArray() {
         int[] input = {3, 4, 9, 3, 1, 8};
         int expected = 4;
-        int actual = ArrayUtilities.averageOfArray(input);
+        int actual = IntArrayUtilities.averageOfArray(input);
 
         Assert.assertEquals(expected, actual);
     }
@@ -109,7 +112,7 @@ public class TestArrayUtilities {
     public void test1AverageDoublesOfArray() {
         double[] input = {3.2, 4.55, 9.0, 2.34, 1.7};
         double expected = 4.158;
-        double actual = ArrayUtilities.doubleAverageOfArray(input);
+        double actual = IntArrayUtilities.doubleAverageOfArray(input);
 
         Assert.assertEquals(expected, actual, 0.01);
     }
@@ -118,7 +121,7 @@ public class TestArrayUtilities {
     public void test2AverageDoublesOfArray() {
         double[] input = {5.24789};
         double expected = 5.24789;
-        double actual = ArrayUtilities.sumDoublesOfArray(input);
+        double actual = IntArrayUtilities.sumDoublesOfArray(input);
 
         Assert.assertEquals(expected, actual, 0.01);
     }
@@ -127,7 +130,7 @@ public class TestArrayUtilities {
     public void test3AverageDoublesOfArray() {
         double[] input = {3.2, 4.55, 9.0, 2.34, 1.7, 3.3};
         double expected = 4.015;
-        double actual = ArrayUtilities.doubleAverageOfArray(input);
+        double actual = IntArrayUtilities.doubleAverageOfArray(input);
 
         Assert.assertEquals(expected, actual, 0.01);
     }
@@ -137,7 +140,7 @@ public class TestArrayUtilities {
         int[] input = {3, 4, 9, 2, 1};
         int numb = 9;
 
-        Assert.assertTrue(ArrayUtilities.containsValue(input, numb));
+        Assert.assertTrue(IntArrayUtilities.containsValue(input, numb));
     }
 
     @Test
@@ -145,14 +148,14 @@ public class TestArrayUtilities {
         int[] input = {3, 4, 9, 2, 1};
         int numb = 11;
 
-        Assert.assertFalse(ArrayUtilities.containsValue(input, numb));
+        Assert.assertFalse(IntArrayUtilities.containsValue(input, numb));
     }
 
     @Test
     public void test1ReverseArray() {
         int[] actual = {3, 4, 9, 2, 1};
         int[] expected = {1, 2, 9, 4, 3};
-        ArrayUtilities.reverseArray(actual);
+        IntArrayUtilities.reverseArray(actual);
 
         Assert.assertTrue(Arrays.equals(expected, actual));
     }
@@ -161,7 +164,7 @@ public class TestArrayUtilities {
     public void test2ReverseArray() {
         int[] actual = {8, 2};
         int[] expected = {2, 8};
-        ArrayUtilities.reverseArray(actual);
+        IntArrayUtilities.reverseArray(actual);
 
         Assert.assertTrue(Arrays.equals(expected, actual));
     }
@@ -171,7 +174,7 @@ public class TestArrayUtilities {
         int[] input = {3, 4, 9, 2, 1};
         int numb = 2;
         int expected = 3;
-        int actual = ArrayUtilities.findIndexOf(input, numb);
+        int actual = IntArrayUtilities.findIndexOf(input, numb);
 
         Assert.assertEquals(expected, actual);
     }
@@ -181,7 +184,7 @@ public class TestArrayUtilities {
         int[] input = {8, 2};
         int numb = 5;
         int expected = -1;
-        int actual = ArrayUtilities.findIndexOf(input, numb);
+        int actual = IntArrayUtilities.findIndexOf(input, numb);
 
         Assert.assertEquals(expected, actual);
     }
@@ -189,7 +192,7 @@ public class TestArrayUtilities {
     @Test
     public void test1copyArrayLoop() {
         int[] input = {3, 4, 9, 2, 1};
-        int[] actual = ArrayUtilities.copyArrayByLoop(input);
+        int[] actual = IntArrayUtilities.copyArrayByLoop(input);
 
         Assert.assertTrue(Arrays.equals(input, actual));
     }
@@ -197,7 +200,7 @@ public class TestArrayUtilities {
     @Test
     public void test2copyArrayLoop() {
         int[] input = {8, 2};
-        int[] actual = ArrayUtilities.copyArrayByLoop(input);
+        int[] actual = IntArrayUtilities.copyArrayByLoop(input);
 
         Assert.assertTrue(Arrays.equals(input, actual));
     }
@@ -206,18 +209,18 @@ public class TestArrayUtilities {
     public void test1removeElement() {
         int[] input = {3, 4, 9, 2, 1};
         int numb = 2;
-        int[] output = ArrayUtilities.removeElementFromArray(input, numb);
+        int[] output = IntArrayUtilities.removeElementFromArray(input, numb);
 
-        Assert.assertFalse(ArrayUtilities.containsValue(output, numb));
+        Assert.assertFalse(IntArrayUtilities.containsValue(output, numb));
     }
 
     @Test
     public void test2removeElement() {
         int[] input = {8, 2};
         int numb = 2;
-        int[] output = ArrayUtilities.removeElementFromArray(input, numb);
+        int[] output = IntArrayUtilities.removeElementFromArray(input, numb);
 
-        Assert.assertFalse(ArrayUtilities.containsValue(output, numb));
+        Assert.assertFalse(IntArrayUtilities.containsValue(output, numb));
     }
 
     @Test
@@ -225,8 +228,8 @@ public class TestArrayUtilities {
         int[] input = {3, 4, 9, 2, 1};
         int numb = 7;
         int index = 4;
-        int[] output = ArrayUtilities.insertIntoArrayAt(input, numb, index);
-        int actual = ArrayUtilities.findIndexOf(output, numb);
+        int[] output = IntArrayUtilities.insertIntoArrayAt(input, numb, index);
+        int actual = IntArrayUtilities.findIndexOf(output, numb);
 
         Assert.assertEquals(index, actual);
     }
@@ -236,8 +239,8 @@ public class TestArrayUtilities {
         int[] input = {8, 2};
         int numb = 7;
         int index = 0;
-        int[] output = ArrayUtilities.insertIntoArrayAt(input, numb, index);
-        int actual = ArrayUtilities.findIndexOf(output, numb);
+        int[] output = IntArrayUtilities.insertIntoArrayAt(input, numb, index);
+        int actual = IntArrayUtilities.findIndexOf(output, numb);
 
         Assert.assertEquals(index, actual);
     }
@@ -247,8 +250,8 @@ public class TestArrayUtilities {
         int[] input = {8, 2};
         int numb = 7;
         int index = 2;
-        int[] output = ArrayUtilities.insertIntoArrayAt(input, numb, index);
-        int actual = ArrayUtilities.findIndexOf(output, numb);
+        int[] output = IntArrayUtilities.insertIntoArrayAt(input, numb, index);
+        int actual = IntArrayUtilities.findIndexOf(output, numb);
 
         Assert.assertEquals(index, actual);
     }
@@ -258,14 +261,14 @@ public class TestArrayUtilities {
         int[] input = {8, 2};
         int numb = 7;
         int index = 10;
-        ArrayUtilities.insertIntoArrayAt(input, numb, index);
+        IntArrayUtilities.insertIntoArrayAt(input, numb, index);
     }
 
     @Test
     public void test1removeDups() {
         int[] input = {3, 4, 9, 2, 1, 3, 9, 3};
         int[] expected = {3, 4, 9, 2, 1};
-        int[] actual = ArrayUtilities.removeDupesFromArray(input);
+        int[] actual = IntArrayUtilities.removeDupesFromArray(input);
 
         Assert.assertTrue(Arrays.equals(expected, actual));
     }
@@ -274,7 +277,7 @@ public class TestArrayUtilities {
     public void test2removeDups() {
         int[] input = {8, 2, 8, 8, 8, 8, 8, 8, 1};
         int[] expected = {8, 2, 1};
-        int[] actual = ArrayUtilities.removeDupesFromArray(input);
+        int[] actual = IntArrayUtilities.removeDupesFromArray(input);
 
         Assert.assertTrue(Arrays.equals(expected, actual));
     }
@@ -288,7 +291,7 @@ public class TestArrayUtilities {
         expected.add(9);
         expected.add(2);
         expected.add(1);
-        ArrayList<Integer> actual = ArrayUtilities.makeMeAnArrayListFromArray(input);
+        ArrayList<Integer> actual = IntArrayUtilities.makeMeAnArrayListFromArray(input);
 
         Assert.assertEquals(expected, actual);
     }
@@ -299,7 +302,7 @@ public class TestArrayUtilities {
         ArrayList<Integer> expected = new ArrayList<Integer>();
         expected.add(8);
         expected.add(2);
-        ArrayList<Integer> actual = ArrayUtilities.makeMeAnArrayListFromArray(input);
+        ArrayList<Integer> actual = IntArrayUtilities.makeMeAnArrayListFromArray(input);
 
         Assert.assertEquals(expected, actual);
     }
@@ -313,7 +316,7 @@ public class TestArrayUtilities {
         input.add(2);
         input.add(1);
         int[] expected = {3, 4, 9, 2, 1};
-        int[] actual = ArrayUtilities.makeMeAnArrayFromArrayList(input);
+        int[] actual = IntArrayUtilities.makeMeAnArrayFromArrayList(input);
 
         Assert.assertTrue(Arrays.equals(expected, actual));
     }
@@ -324,7 +327,7 @@ public class TestArrayUtilities {
         input.add(8);
         input.add(2);
         int[] expected = {8, 2};
-        int[] actual = ArrayUtilities.makeMeAnArrayFromArrayList(input);
+        int[] actual = IntArrayUtilities.makeMeAnArrayFromArrayList(input);
 
         Assert.assertTrue(Arrays.equals(expected, actual));
     }
@@ -333,7 +336,7 @@ public class TestArrayUtilities {
     public void test1check2ArraysEqual() {
         int[] input = {3, 4, 9, 2, 1};
 
-        Assert.assertTrue(ArrayUtilities.check2ArraysForEqual(input, input));
+        Assert.assertTrue(IntArrayUtilities.check2ArraysForEqual(input, input));
     }
 
     @Test
@@ -341,6 +344,6 @@ public class TestArrayUtilities {
         int[] input1 = {8, 2, 3, 5, 7, 1, 9};
         int[] input2 = {3, 4, 9, 2, 1};
 
-        Assert.assertFalse(ArrayUtilities.check2ArraysForEqual(input1, input2));
+        Assert.assertFalse(IntArrayUtilities.check2ArraysForEqual(input1, input2));
     }
 }
