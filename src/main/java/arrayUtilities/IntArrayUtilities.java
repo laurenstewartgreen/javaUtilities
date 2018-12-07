@@ -178,4 +178,74 @@ public class IntArrayUtilities {
         return true;
     }
 
+    public static Integer[] merge(Integer[] array1, Integer[] array2) {
+        Integer[] result = new Integer[array1.length + array2.length];
+        int index = 0;
+
+        for (int i = 0; i < array1.length; i++) {
+            result[i] = array1[i];
+            index++;
+        }
+        for(int k = 0; k < array2.length; k++){
+            result[index] = array2[k];
+            index++;
+        }
+
+        return result;
+
+    }
+
+    public static Integer[] rotate(Integer[] array, int i) {
+        Integer[] result = new Integer[array.length];
+
+        for (int j = 0; j < array.length - i; j++) {
+            result[j] = array[j + i];
+        }
+        int index = 0;
+        for (int k = array.length - i; k < array.length; k++) {
+            result[k] = array[index];
+            index++;
+
+        }
+
+        return result;
+    }
+
+    public static Integer countOccurrance(Integer[] array1, Integer[] array2, Integer valueToEvaluate) {
+        int count = 0;
+        for (Integer numb: array1) {
+            if(numb.equals(valueToEvaluate)) {
+                count++;
+            }
+        }
+        for (Integer numb: array2) {
+            if(numb.equals(valueToEvaluate)) {
+                count++;
+            }
+        }
+
+        return count;
+
+    }
+
+    public static Integer mostCommon(Integer[] array) {
+        int[] counts = new int[10];
+
+        for (Integer numb: array) {
+            counts[numb]++;
+        }
+        Integer largest = 0;
+        Integer index = 0;
+        Integer mostCommonNumber = 0;
+        for (int i: counts) {
+            if(i > largest){
+                i = largest;
+                mostCommonNumber = index;
+            }
+            index++;
+        }
+        return mostCommonNumber;
+
+    }
+
 }
