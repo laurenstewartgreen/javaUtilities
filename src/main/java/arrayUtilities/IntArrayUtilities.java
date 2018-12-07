@@ -37,6 +37,17 @@ public class IntArrayUtilities {
         return sum;
     }
 
+    public static Integer getProduct(Integer[] intArray) {
+
+        Integer product = 1;
+        for (int i = 0; i < intArray.length; i++) {
+            product = product * intArray[i];
+        }
+
+        return product;
+    }
+
+
     public static int averageOfArray(int[] input) {
         return sumValuesOfArray(input) / input.length;
     }

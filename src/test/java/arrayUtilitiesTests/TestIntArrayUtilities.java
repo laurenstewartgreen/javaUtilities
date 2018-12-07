@@ -486,4 +486,17 @@ public class TestIntArrayUtilities {
         //Then
         Assert.assertEquals(commonValue, actual);
     }
+
+    @Test
+    public void testGetProduct() {
+        // : Given
+        Integer[] input = { 1, 2, 3, 4, 5};
+        Integer expected = 120;
+
+        // : When
+        Integer actual = IntArrayUtilities.getProduct(input);
+
+        // : Then
+        Assert.assertEquals(expected, actual);
+    }
 }

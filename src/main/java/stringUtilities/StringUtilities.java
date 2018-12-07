@@ -63,4 +63,71 @@ public class StringUtilities {
         public static Boolean isSpecialCharacterString(String string) {
             return string.matches("[!@#$%^&*() ]+");
         }
+
+    public static String camelCase(String str) {
+
+        String[] arr = str.split(" ");
+        String result = "";
+
+        for (int i = 0; i < arr.length; i++) {
+            result = result + " " + Character.toUpperCase(arr[i].charAt(0)) + arr[i].substring(1);
+        }
+        result = result.substring(1);
+        return result;
+    }
+
+    public static String reverse(String str) {
+
+        String result = "";
+
+
+        for (int i = (str.length() - 1); i >= 0; i--) {
+
+            result = result + str.charAt(i);
+
+        }
+
+        return result;
+
+    }
+
+    public static String reverseWords(String str) {
+
+        String[] arr = str.split(" ");
+        String result = "";
+
+        for (int i = 0; i < arr.length; i++) {
+            String currentWord = arr[i];
+            result = result + " " + reverse(currentWord);
+        }
+
+        result = result.substring(1);
+        return result;
+
+
+    }
+
+    public static String removeFirstAndLastCharacter(String str) {
+
+        return str.substring(1, str.length()-1);
+    }
+
+    public static String invertCasing(String str) {
+        char[] chars = str.toCharArray();
+        for (int i = 0; i < chars.length; i++)
+        {
+            char c = chars[i];
+            if (Character.isUpperCase(c))
+            {
+                chars[i] = Character.toLowerCase(c);
+            }
+            else if (Character.isLowerCase(c))
+            {
+                chars[i] = Character.toUpperCase(c);
+            }
+        }
+        return new String(chars);
+
+    }
+
     }

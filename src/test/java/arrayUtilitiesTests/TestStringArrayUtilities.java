@@ -113,4 +113,30 @@ public class TestStringArrayUtilities {
         // when
         StringArrayUtilities.getSubArray(input, startIndex, endIndex);
     }
+
+    @Test
+    public void firstLetterTest() {
+        // Given
+        String[] inputArray = {"The", "quick", "brown", "fox"};
+        String expected = "Tqbf";
+
+        // When
+        String actual = StringArrayUtilities.getFirstLetterOfEachElement(inputArray);
+
+        // Then
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void firstLetterTest2() {
+        // Given
+        String[] inputArray = {"Somewhere", "over", "the", "rainbow"};
+        String expected = "Sotr";
+
+        // When
+        String actual = StringArrayUtilities.getFirstLetterOfEachElement(inputArray);
+
+        // Then
+        Assert.assertEquals(expected, actual);
+    }
 }

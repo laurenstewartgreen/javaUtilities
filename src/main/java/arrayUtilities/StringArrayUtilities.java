@@ -35,4 +35,17 @@ public class StringArrayUtilities {
         return getSubArray(arrayToBeSpliced, startingIndex, arrayToBeSpliced.length - 1);
     }
 
+    public static String getFirstLetterOfEachElement(String[] stringArray) {
+
+        String answer = "";
+
+        for(String s : stringArray) {
+            answer = answer + s.charAt(0);
+        }
+
+
+        return answer;
+
+    }
+
 }
