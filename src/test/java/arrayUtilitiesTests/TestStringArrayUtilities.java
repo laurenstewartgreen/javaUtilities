@@ -139,4 +139,30 @@ public class TestStringArrayUtilities {
         // Then
         Assert.assertEquals(expected, actual);
     }
+
+    @Test
+    public void reverseTest1() {
+        // Given
+        String[] inputArray = {"Somewhere", "over", "the", "rainbow"};
+        String[] expected = {"rainbow", "the", "over", "Somewhere"};
+
+        // When
+        String[] actual = StringArrayUtilities.reverse(inputArray);
+
+        // Then
+        Assert.assertArrayEquals(expected, actual);
+    }
+
+    @Test
+    public void reverseTest2() {
+        // Given
+        String[] inputArray = {"The", "Quick", "Brown", "Fox", "Jumps"};
+        String[] expected = {"Jumps", "Fox", "Brown", "Quick", "The"};
+
+        // When
+        String[] actual = StringArrayUtilities.reverse(inputArray);
+
+        // Then
+        Assert.assertArrayEquals(expected, actual);
+    }
 }

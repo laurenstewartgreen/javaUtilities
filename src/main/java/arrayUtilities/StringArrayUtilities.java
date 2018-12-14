@@ -48,4 +48,14 @@ public class StringArrayUtilities {
 
     }
 
+    public static String[] reverse(String[] arr) {
+
+        for(int i = 0; i < (arr.length / 2); i++) {
+            String holder = arr[i];
+            arr[i] = arr[arr.length - 1 - i];
+            arr[arr.length - 1 - i] = holder;
+        }
+        return arr;
+    }
+
 }
